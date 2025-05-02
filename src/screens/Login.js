@@ -26,7 +26,7 @@ export const Login = () => {
         style={styles.input}
         placeholder="Enter Password"
       />
-      <CustomButton title={'Login'} />
+      <CustomButton onPress={()=>{navigation.navigate("Main")}} title={'Login'} />
       <Text style={styles.signupTxt} onPress={()=>{
         navigation.navigate('SignUp')
       }}>

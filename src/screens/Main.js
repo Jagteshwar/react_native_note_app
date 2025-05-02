@@ -1,10 +1,14 @@
-import React, { Component } from 'react'
+import { createDrawerNavigator } from '@react-navigation/drawer'
+import React from 'react'
 import { Text, View } from 'react-native'
+import BottomScreen from './drawer/DrawerScreen';
 
 export const Main = () => {
+  const Drawer = createDrawerNavigator();
     return (
-      <View>
-        <Text>MainScreen</Text>
-      </View>
+     <Drawer.Navigator>
+      <Drawer.Screen name='Bottom' component={BottomScreen}/>
+     </Drawer.Navigator>
     )
 }
+
