@@ -3,11 +3,14 @@ import {View, Text, TextInput, StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import CustomButton from '../components/CustomButton';
 import { useNavigation } from '@react-navigation/native';
+import axios from 'axios';
+import { BASE_URL } from '../apis/Api';
 export const SignUp = () => {
     const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigation = useNavigation()
+
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Create New Account</Text>

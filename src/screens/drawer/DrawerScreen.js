@@ -14,11 +14,11 @@ const BottomScreen = () => {
         component={Home}
         options={{
             headerShown: false, 
-            tabBarIcon: ({size, focused})=> {
+            tabBarIcon: ({size, color})=> {
             return(
              <Image 
              source={require('../../images/home.png')}
-             style={{width: size, height: size}}
+             style={{width: size, height: size, tintColor: color}}
              />   
             )
         },
@@ -29,11 +29,11 @@ const BottomScreen = () => {
         component={AddNote}
         options={{
             headerShown: false,
-            tabBarIcon: ({size, focused})=> {
+            tabBarIcon: ({size, color})=> {
                 return(
                  <Image 
                  source={require('../../images/add.png')}
-                 style={{width: size, height: size}}
+                 style={{width: size, height: size, tintColor: color}}
                  />   
                 )
             },
@@ -43,11 +43,11 @@ const BottomScreen = () => {
         name="Profile"
         component={Profile}
         options={{headerShown: false,
-            tabBarIcon: ({size, focused})=> {
+            tabBarIcon: ({size, color})=> {
                 return(
                  <Image 
                  source={require('../../images/user.png')}
-                 style={{width: size, height: size}}
+                 style={{width: size, height: size, tintColor: color}}
                  />   
                 )
             },
